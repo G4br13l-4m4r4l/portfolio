@@ -1,0 +1,168 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+header{
+    display: flex;
+    background-color: #111;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.menu{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-left: 700px;
+    justify-content: space-around;
+}
+.flex ul{
+    list-style: none;
+    display: flex;
+}
+.flex ul li{
+    margin-left: 45px;
+}
+.btn-menu:hover{
+    color: #F50E1D;
+    transition: 0.2s;
+    cursor: pointer;
+}
+body .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    scroll-behavior: smooth;
+    background-color: #111;
+}
+.container{
+    display: inline-flex;
+    background: #111;
+}
+.container .estatico{
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 400;
+}
+.container .dinamico{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dinamico li{
+    color: #F50E1D;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid #F50E1D;
+    animation: typing 1.5s steps(20) infinite;
+    background: #111;
+}
+.dinamico li span{
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.title{
+    margin-left: 530px;
+}
+.under{
+    border: 1px solid #F50E1D;
+    width: 100px;
+}
+.sobre{
+    background-color: #111;
+    color: aliceblue;
+    
+    justify-content: center;
+    align-items: center;
+}
+.sobre p{
+    padding: 12px;
+}
+.projetos{
+    background-color: #111;
+    color: aliceblue;
+}
+.skills{
+    background-color: #111;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+.skills h1{
+    border-bottom: 1px solid #F50E1D;
+    align-items: center;
+    justify-content: center;
+}
+.skills .cards{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skills .cards .card{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: aliceblue;
+    margin: 20px;
+    border: 1px solid #F50E1D;
+    color: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+.skills .cards .card:hover{
+    background-color: #F50E1D;
+    color: aliceblue;
+    margin-top: -30px;
+    transition: 0.5s;
+    box-shadow: 2px 20px 25px #585656;
+} 
+.skills .cards .card:hover img{
+    filter: invert(1);
+}   
+.skills .card img{
+    transition: 0.5s;
+}
+footer{
+    background-color: #F50E1D;
+    color: aliceblue;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
