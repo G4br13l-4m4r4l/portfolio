@@ -6,6 +6,37 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+.pre-carregamento{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.efeito{
+    width: 35px;
+    height: 35px;
+    background-color: #F50E1D;
+    border-radius: 100%;
+    animation: efeito .5s infinite;
+}
+@keyframes efeito{
+    0%{
+        box-shadow: 0 0 0 0 #F50E1D;
+    }   
+    100%{
+        box-shadow: 0 0 0 15px #F50E1D;
+    }
+}
 header{
     display: flex;
     background-color: #111;
@@ -18,7 +49,7 @@ header{
     margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .flex{
     display: flex;
@@ -33,10 +64,29 @@ header{
 .flex ul li{
     margin-left: 45px;
 }
-.btn-menu:hover{
+.btn-menu a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+.btn-menu a:hover{
     color: #F50E1D;
     transition: 0.2s;
     cursor: pointer;
+}
+.btn-menu a::after{
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #F50E1D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+.btn-menu a:hover::after{
+    width: 100%;
+
 }
 body .main{
     display: flex;
@@ -100,17 +150,20 @@ body .main{
 }
 .under{
     border: 1px solid #F50E1D;
-    width: 100px;
+    width: 200px;
+    margin-left: 530px;
 }
 .sobre{
     background-color: #111;
     color: aliceblue;
-    
     justify-content: center;
     align-items: center;
+
 }
 .sobre p{
+    margin-left: 250px;
     padding: 12px;
+    width: 50rem;;
 }
 .projetos{
     background-color: #111;
@@ -136,9 +189,9 @@ body .main{
 .skills .cards .card{
     position: relative;
     padding: 10px;
-    width: 300px;
+    width: 250px;
     background-color: aliceblue;
-    margin: 20px;
+    margin: 30px 20px 30px 20px;
     border: 1px solid #F50E1D;
     color: #111;
     border-radius: 20px;
@@ -150,6 +203,7 @@ body .main{
     background-color: #F50E1D;
     color: aliceblue;
     margin-top: -30px;
+    padding: 5px;
     transition: 0.5s;
     box-shadow: 2px 20px 25px #585656;
 } 
@@ -171,9 +225,16 @@ footer{
 .curriculo_download .download{
     border: 1px solid #585656;
     border-radius: 5px;
+    
 }
 .curriculo_download .download a{
-    font-style: none;
+    text-decoration: none;
     border: none;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.curriculo_download .download a img{
+    margin-top: 1px;   
 }

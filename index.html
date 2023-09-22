@@ -10,19 +10,25 @@
     <link rel="shortcut icon" href="images/icon_1.png" type="image/x-icon" />
     <title>Gabriel do Amaral</title>
 </head>
-<body>
+<body onload="preCarregamento();">
+    <!--Menu inicial-->
     <header>
+        <!--<div class="pre-carregamento">
+            <div class="efeito">
+
+            </div>
+        </div>-->
         <div class="menu">
             
             <a href="#" id="logo"><img src="images/code.png"/></a>
             <div class="flex">
                 <nav>
                     <ul>
-                        <li class="btn-menu">Sobre mim</li>
-                        <li class="btn-menu">Projetos</li>
-                        <li class="btn-menu">Skills</li>
-                        <li class="btn-menu">Contato</li>
-                        <li class="btn-menu Curriculo">Curriculo</li>
+                        <li class="btn-menu"><a href="#sobre">Sobre mim</a></li>
+                        <li class="btn-menu"><a href="#projetos">Projetos</a></li>
+                        <li class="btn-menu"><a href="#skills">Skills</a></li>
+                        <li class="btn-menu"><a href="#contato">Contato</a></li>
+                        <li class="btn-menu Curriculo"><a href="#curriculo_download">Curriculo</a></li>
                     </ul>
                 </nav>
 
@@ -30,6 +36,7 @@
         </div>
     </header>
     <main>
+        <!--Animacao-->
         <div class="main">
             <div class="container">
                 <div class="estatico">Eu sou</div>~
@@ -41,19 +48,22 @@
                 </ul>
             </div>
         </div>
-        <div class="sobre">
+        <!--Sobre mim-->
+        <div class="sobre" id="sobre">
             <h2 class="title">Sobre mim</h2>
             <div class="under"></div>
-            <p id="resumo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, repellat? Laborum, exercitationem laboriosam necessitatibus quis animi voluptatem? Enim, consequatur possimus. Atque consectetur libero voluptatem voluptates quae eligendi repellendus voluptate excepturi.</p>
+            <p id="resumo">Olá! Sou Gabriel do Amaral, tenho 25 anos e sou um entusiasta apaixonado por tecnologia. Estou embarcando na jornada para me tornar um desenvolvedor. Tenho sede de conhecimento, uma atitude pró-ativa e estou ansioso para aprender e crescer na área de desenvolvimento.</p>
             <p id="resumo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, repellat? Laborum, exercitationem laboriosam necessitatibus quis animi voluptatem? Enim, consequatur possimus. Atque consectetur libero voluptatem voluptates quae eligendi repellendus voluptate excepturi.</p>
             <p id="resumo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, repellat? Laborum, exercitationem laboriosam necessitatibus quis animi voluptatem? Enim, consequatur possimus. Atque consectetur libero voluptatem voluptates quae eligendi repellendus voluptate excepturi.</p>
         </div>
+        <!--Parte de projetos-->
         <div class="projetos">
             <h2 class="title">Projetos</h2>
             <div class="under"></div>
             <p id="resumo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, repellat? Laborum, exercitationem laboriosam necessitatibus quis animi voluptatem? Enim, consequatur possimus. Atque consectetur libero voluptatem voluptates quae eligendi repellendus voluptate excepturi.</p>
         </div>
-        <div class="skills">
+        <!--Tecnologias-->
+        <div class="skills" id="skills">
             <h2 class="title">Skills</h2>
             <div class="under"></div>
             <div class="cards">
@@ -80,6 +90,12 @@
                         <img src="images/js.png" alt="Javascript">
                     </div>
                     <h2>Javascript</h2>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="images/typescript.png" alt="typescript">
+                    </div>
+                    <h2>Typescript</h2>
                 </div>
                 <div class="card">
                     <div class="img">
@@ -121,14 +137,16 @@
         </div>
     </main>
     <footer>
-        <div class="contato">
+        <!--Contato-->
+        <div class="contato" id="contato">
             <h2>Entre em contato comigo:</h2><br/>
             <a class="btn_contact" href="https://github.com/G4br13l-4m4r4l" target="_blank"><img src="images/github.png" alt="github"></a>
             <a class="btn_contact" href="https://www.linkedin.com/in/gabriel-do-amaral-198ba7245/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
             <a class="btn_contact" href="https://api.whatsapp.com/send?phone=5562982274660" target="_blank"><img src="images/whatsapp.png" alt="whatsapp"></a>
         </div>
-        <div class="curriculo_download">
-            <div class="download"><a href="Doc/CV_Gabriel_.pdf" target="_blank"><img src="images/Download.png" alt="download"z'>Download Curriculo</a></div>
+        <!--Download curriculo-->
+        <div class="curriculo_download" id="curriculo_download">
+            <div class="download"><a href="Doc/CV_Gabriel_.pdf" target="_blank"><img src="images/Download.png" alt="download">Download Curriculo</a></div>
         </div>
     </footer>
     <script src="script.js"></script>
