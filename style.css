@@ -169,6 +169,9 @@ body .main{
     background-color: #111;
     color: aliceblue;
 }
+.projetos .proj{
+    min-height: 100vh;
+}
 .skills{
     background-color: #111;
     color: aliceblue;
@@ -225,16 +228,35 @@ footer{
 .curriculo_download .download{
     border: 1px solid #585656;
     border-radius: 5px;
-    
+    margin-top: 0px;
 }
 .curriculo_download .download a{
     text-decoration: none;
     border: none;
+    background-color: #111;
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+}
+.curriculo_download .download a:hover{
+    background-color: aliceblue;
+    color: #111;
+    margin-top: -30px;
+    padding: 5px;
+    transition: 0.5s;
+    box-shadow: 2px 20px 25px #585656;
 }
 .curriculo_download .download a img{
     margin-top: 1px;   
+    filter: invert(1);
+}
+#rights img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#rights{
+    display: flex;
 }
