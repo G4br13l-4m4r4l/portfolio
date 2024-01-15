@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #progress {
+    width: 0;
+    height: 20px;
+    color: lime;
+  }
+
+  #command-prompt {
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #output {
+    color: lime;
+  }
+
+  #input-container {
+    display: flex;
+    position: relative; 
+  }
+  
+  #user-input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    color: lime;
+    outline:none;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Courier New', monospace;
+    caret-color: lime;
+  }
+  #user-input:active{
+      border: none;
+      color: lime;
+      outline:none;
+  }
+  h1, p {
+    margin: 0;
+  }
+
+  .fade-in-element {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}

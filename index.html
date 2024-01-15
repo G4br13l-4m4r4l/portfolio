@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/programador.png" type="image/png"/>
+  <link rel="stylesheet" href="./assets/styles/style.css"/>
+  <title>Command Prompt Landing Page</title>
+</head>
+<body>
+  <div id="command-prompt" class="fade-in-element">
+    <br>
+    <div id="output">$ Bem-vindo ao meu Portfolio</div>
+    <div id="output">$ Digite 'start' para começar...</div>
+    <div id="output">$ Digite aqui os seus comandos...</div>
+    <br>
+    <br>
+    <div id="output">
+      <div id="progress"></div>
+    </div>
+    <div id="input-container">
+      <input type="text" id="user-input" placeholder="$" onkeydown="handleInput(event)">
+    </div>
+  </div>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
