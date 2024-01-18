@@ -38,3 +38,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fade in on scroll
     window.addEventListener("scroll", fadeInOnScroll);
 });
+
+

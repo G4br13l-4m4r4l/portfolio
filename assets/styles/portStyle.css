@@ -1,7 +1,8 @@
 body{
-    background-color: black;
+    background: black;
     color: white;
     font-family: 'Courier New', monospace;
+    cursor: url(../images/Normal_Select.cur), auto;
 }
 header{
     display: flex;
@@ -38,68 +39,107 @@ header{
 main{
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background: url('../images/duck.gif') no-repeat center center fixed;
+    background-size: cover;
 }
 main h2{
     color: lime;
 }
-
-.conteudo{
-    width: 50%;
+main i{
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
+#main-content{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.conteudo{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
 .conteudo p{
     max-width: 340px;
 }
-#sobre-min{
+#sobre{
+    margin-top: 50px;
     display: flex;
+    flex-direction: row;
+}
+#sobre-min{
+    padding: 15px;
     align-items: center;
-}
-#sobre-mim p {
-    flex: 1;
     float: left;
-    margin-top: 55px;
 }
-#sobre-mim img{ 
+.conteudo #eu{ 
     margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     max-width: 40%;
     border-radius: 15%;
     box-shadow: 1px 1px 10px lime;
 }
+#conhecimento{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+#conhecimento h2{
+    margin-left: 60px;
+}
 
 #cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
     gap: 30px;
-    padding: 10px;
     justify-content: center;
 }
 
 .card {
-    width: 300px;
+    width: 140px;
     border: 1px solid #ddd;
+    background-color: black;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card:hover{
     box-shadow: 1px 1px 10px lime;
-    cursor: pointer;
+    border: 1px solid lime;
+    cursor: url('../images/Link_Select.cur'),auto;
 }
-.card img {
-    width: 100%;
-    height: auto;
-}
-  
+.card i {
+    color: #ddd;
+    font-size: 44px;
+}  
 .card-content {
     padding: 15px;
 }
   
-.card-content h3 {
-    margin-top: 0;
+.card-content h5 {
     color: white;
 }
-.card-content p {
-    color: #666;
+
+.card:hover i{
+    color: lime;
+}
+.card:hover h5{
+    color: lime;
 }

@@ -6,7 +6,7 @@ function handleInput(event) {
   }
 
   function executeCommand() {
-    var userInput = document.getElementById('user-input').value;
+    let userInput = document.getElementById('user-input').value;
     if(userInput.toLowerCase() == '$ start'){
         document.getElementById('output').innerHTML = '$ entrando...';
         document.getElementById('user-input').value = '$ aguarde...';
@@ -19,12 +19,12 @@ function handleInput(event) {
 
 //efeito fade in
 document.addEventListener("DOMContentLoaded", function() {
-    var fadeElements = document.querySelectorAll(".fade-in-element");
+    let fadeElements = document.querySelectorAll(".fade-in-element");
   
     function fadeInOnScroll() {
       fadeElements.forEach(function(element) {
-        var elementPosition = element.getBoundingClientRect().top;
-        var screenPosition = window.innerHeight;
+        let elementPosition = element.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight;
   
         if (elementPosition < screenPosition && element.style.opacity !== "1") {
           element.style.opacity = "1";
