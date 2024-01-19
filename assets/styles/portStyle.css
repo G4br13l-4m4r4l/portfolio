@@ -30,7 +30,7 @@ header{
     color: lime;
     border-bottom: 1px solid lime;
     transition: .4s ease-in-out;
-    cursor: pointer;
+    cursor: url('../images/Link_Select.cur'),auto;
 }
 .fade-in-element {
     opacity: 0;

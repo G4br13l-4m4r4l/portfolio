@@ -1,22 +1,3 @@
-//passar o texto para a linha de cima
-function handleInput(event) {
-    if (event.key === 'Enter') {
-      executeCommand();
-    }
-  }
-
-  function executeCommand() {
-    let userInput = document.getElementById('user-input').value;
-    if(userInput.toLowerCase() == '$ start'){
-        document.getElementById('output').innerHTML = '$ entrando...';
-        document.getElementById('user-input').value = '$ aguarde...';
-        let intervalId = setInterval(loading, 300);
-    }else{
-        document.getElementById('output').innerHTML = '$ Comando não identificado!';
-        document.getElementById('user-input').value = '$ ';
-    }
-  }
-
 //efeito fade in
 document.addEventListener("DOMContentLoaded", function() {
     let fadeElements = document.querySelectorAll(".fade-in-element");
@@ -39,14 +20,31 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", fadeInOnScroll);
 });
 
-//funcao focus input
-function digitarInput(){
-    let cmd = document.getElementById('user-input');
-    window.onload = ()=> cmd.focus();
-    cmd.value = '$ ';
 
+
+//Efeito aleatorio
+
+let campoTexto = document.getElementById('output2');
+let t = 1;
+
+function driveIn(){
+      campoTexto.innerHTML = '$ [12lld@*(*&#"!A]';
+  
+      if(t==1){
+        campoTexto.innerHTML = '$ [(&*¨!¨&¨#%¨&aT$]';
+        console.log('passou 1')
+        t++
+      }else if(t==2){
+        console.log('passou 2')
+        campoTexto.innerHTML = '$ [!*(&P&wt*#w¨t&!h¨qwe*&¨sd#*]';
+        t++
+      }else{
+        campoTexto.innerHTML = '$ [&¨&KJAKD&*!DJD()!Y&#&¨!]';
+        t=1;
+        let intervalId = setInterval(loading, 150);
+      }
 }
-digitarInput();
+window.onload = ()=> setInterval(driveIn,800);
 
 
 //funcao loading
