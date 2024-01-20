@@ -3,6 +3,7 @@ body{
     color: white;
     font-family: 'Courier New', monospace;
     cursor: url(../images/Normal_Select.cur), auto;
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
@@ -142,4 +143,14 @@ main i{
 }
 .card:hover h5{
     color: lime;
+}
+#roda i{
+    color: #ddd;
+}
+#roda i:hover{
+    cursor: url('../images/Link_Select.cur'),auto;
+    color: lime;
+}
+#roda p{
+    color: #ddd !important;
 }

@@ -32,19 +32,17 @@ function driveIn(){
   
       if(t==1){
         campoTexto.innerHTML = '$ [(&*¨!¨&¨#%¨&aT$]';
-        console.log('passou 1')
         t++
       }else if(t==2){
-        console.log('passou 2')
         campoTexto.innerHTML = '$ [!*(&P&wt*#w¨t&!h¨qwe*&¨sd#*]';
         t++
       }else{
         campoTexto.innerHTML = '$ [&¨&KJAKD&*!DJD()!Y&#&¨!]';
         t=1;
-        let intervalId = setInterval(loading, 150);
+        let intervalId = setInterval(loading, 230);
       }
 }
-window.onload = ()=> setInterval(driveIn,800);
+window.onload = ()=> setInterval(driveIn,400);
 
 
 //funcao loading

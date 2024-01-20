@@ -21,16 +21,18 @@
             <h1 id="name"></h1>
             <ul id="nav-menu" class="fade-in-element">
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#conhecimento">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#roda">Contato</a></li>
             </ul>
         </div>
     </header>
     <main class="fade-in-element">
           <div id="main-content">
+            <div class="conteudo" id="show">
 
+            </div>
             <div class="conteudo" id="sobre">
               <div id="sobre-mim">
                   <h2 id="titulo1">Sobre mim_</h2>
@@ -139,49 +141,42 @@
             <br>
             <div class="conteudo" id="projetos">
                 <h2>Projetos_</h2><br><br>
-                <div id="carouselExampleCaptions" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
+                <div id="carouselExample" class="carousel slide">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="..." class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
+                      <img src="./assets/images/giphy.gif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="./assets/images/duck.gif" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="..." class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                      </div>
+                      <img src="./assets/images/terminal.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="..." class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                      </div>
+                      <img src="./assets/images/giphy.gif" class="d-block w-100" alt="...">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
           </div>
     </main>
-    <footer>
-        footer
-    </footer>
+      <footer class="py-3 my-4" id="roda">
+        <ul class="nav justify-content-center">
+          <h2>contato_</h2>
+          <li class="nav-item"><a href="https://www.linkedin.com/in/gabriel-do-amaral-198ba7245/" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
+          <li class="nav-item"><a href="https://github.com/G4br13l-4m4r4l" class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-envelope-at"></i></a></li>
+          <li class="nav-item"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5562982274660" class="nav-link px-2 text-body-secondary"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+        <p class="text-center text-body-secondary">Created by Gabriel🚀.2024.</p>
+      </footer>
     <script src="./assets/scripts/main.js"></script>
 </body>
 </html>
