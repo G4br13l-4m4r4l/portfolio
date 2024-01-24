@@ -1,8 +1,6 @@
 
 let nome = document.getElementById('name');
 
-let show = document.getElementById('show');
-
 let progress = 0;
 let myName = '[Gabriel do Amaral]';
 
@@ -41,41 +39,3 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", fadeInOnScroll);
 });
 
-
-//efeito typing
-function typeAndErase(text, container, speed) {
-  let index = 0;
-
-  function type() {
-    container.textContent += text[index];
-    index++;
-
-    if (index < text.length) {
-      setTimeout(type, speed);
-    } else {
-      setTimeout(erase, speed * 2); // Aguarda um tempo antes de começar a apagar
-    }
-  }
-
-  function erase() {
-    container.textContent = text.substring(0, index);
-    index--;
-
-    if (index >= 0) {
-      setTimeout(erase, speed);
-    } else {
-      setTimeout(type, speed); // Aguarda um tempo antes de começar a digitar novamente
-    }
-  }
-
-  type(); // Inicia o processo de digitação
-}
-
-// Texto para o efeito de digitação e apagar
-const textToType = 'Hello, World!';
-
-// Velocidade de digitação (em milissegundos por caractere)
-const typingSpeed = 300;
-
-// Inicia o efeito de digitação e apagar
-typeAndErase(textToType, show, typingSpeed);
