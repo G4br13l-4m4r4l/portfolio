@@ -253,6 +253,9 @@ main i{
 }
 
 @media (min-width:481px) and (max-width:767px){
+    body{
+        font-size: large;
+    }
     #menu{
         display: flex;
         width: 100%;
@@ -331,12 +334,16 @@ main i{
 }
 
 @media (min-width:768px) and (max-width:991px){
+    body{
+        font-size: 25px;
+    }
     #menu{
         display: flex;
         width: 100%;
         padding: 10px;
     }
     #menu h1{
+        font-size: 60px;
         margin: 20px;
     }
     #menu ul{
@@ -356,7 +363,7 @@ main i{
         padding: 0px;
     }
     #show img{
-        width: 250px;
+        width: 400px;
     }
 
     .conteudo{
@@ -374,7 +381,7 @@ main i{
     #sobre{
         margin-top: 50px;
         display: flex;
-        flex-direction:column
+        flex-direction:column;
     }
     #sobre-min{
         padding: 15px;
@@ -382,24 +389,27 @@ main i{
         float:inline-start;
     }    
     #sobre-mim h2{
-        margin-left: 80px;
+        font-size: 38px;
+        margin-left: 60px;
         margin-bottom: 30px;
     }
     .conteudo #eu{ 
         margin-left: 0px;
-        margin-top: 10pxpx;
+        margin-top: 10px;
         margin-bottom: 20px;
         max-width: 70%;
         border-radius: 15%;
         box-shadow: 1px 1px 10px lime;
     }
     #conhecimento h2{
+        font-size: 38px;
         margin-left: 210px;
     }
     #cards{
         grid-template-columns: repeat(3, minmax(140px, 3fr));
     }
     #projetos h2{
+        font-size: 38px;
         margin-left: 230px;
     }
     #carouselExample img{
