@@ -252,7 +252,7 @@ main i{
     }
 }
 
-@media (min-width:481px) and (max-width:767px){
+@media (481px <= width <= 767px){
     body{
         font-size: large;
     }
@@ -333,9 +333,9 @@ main i{
     }
 }
 
-@media (min-width:768px) and (max-width:991px){
+@media (768px <= width <= 837px){
     body{
-        font-size: 25px;
+        font-size: 35px;
     }
     #menu{
         display: flex;
@@ -359,7 +359,7 @@ main i{
     
     #show{
         margin-top: 200px;
-        margin-left: 190px;
+        margin-left: 140px;
         padding: 0px;
     }
     #show img{
@@ -403,22 +403,231 @@ main i{
     }
     #conhecimento h2{
         font-size: 38px;
-        margin-left: 210px;
+        margin-left: 190px;
     }
     #cards{
         grid-template-columns: repeat(3, minmax(140px, 3fr));
     }
     #projetos h2{
         font-size: 38px;
-        margin-left: 230px;
+        margin-left: 210px;
     }
     #carouselExample img{
         width: 150px;
         height: 100%;
     }
 }
-@media (min-width:992px) and (max-width:1199px){
 
+@media (838px <= width <= 900px){
+    body{
+        font-size: 35px;
+    }
+    #menu{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    #menu h1{
+        font-size: 60px;
+        margin: 20px;
+    }
+    #menu ul{
+        display: none;
+    }
+    #main-content{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -150px;
+        margin-bottom: -20px;
+    } 
+    
+    #show{
+        margin-top: 200px;
+        margin-left: 180px;
+        padding: 0px;
+    }
+    #show img{
+        width: 400px;
+    }
+
+    .conteudo{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .conteudo p{
+        max-width: 320px;
+        text-align:justify;
+    }
+    #sobre{
+        margin-top: 50px;
+        display: flex;
+        flex-direction:column;
+    }
+    #sobre-min{
+        padding: 15px;
+        align-items: center;
+        float:inline-start;
+    }    
+    #sobre-mim h2{
+        font-size: 38px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    .conteudo #eu{ 
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 70%;
+        border-radius: 15%;
+        box-shadow: 1px 1px 10px lime;
+    }
+    #conhecimento h2{
+        font-size: 38px;
+        margin-left: 220px;
+    }
+    #cards{
+        grid-template-columns: repeat(3, minmax(140px, 3fr));
+    }
+    #projetos h2{
+        font-size: 38px;
+        margin-left: 250px;
+    }
+    #carouselExample img{
+        width: 150px;
+        height: 100%;
+    }
+}
+@media (901px <= width <= 991px){
+    body{
+        font-size: 35px;
+    }
+    #menu{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    #menu h1{
+        font-size: 60px;
+        margin: 20px;
+    }
+    #menu ul{
+        display: none;
+    }
+    #main-content{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -150px;
+        margin-bottom: -20px;
+    } 
+    
+    #show{
+        margin-top: 200px;
+        margin-left: 200px;
+        padding: 0px;
+    }
+    #show img{
+        width: 400px;
+    }
+
+    .conteudo{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .conteudo p{
+        max-width: 320px;
+        text-align:justify;
+    }
+    #sobre{
+        margin-top: 50px;
+        display: flex;
+        flex-direction:column;
+    }
+    #sobre-min{
+        padding: 15px;
+        align-items: center;
+        float:inline-start;
+    }    
+    #sobre-mim h2{
+        font-size: 38px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    .conteudo #eu{ 
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 70%;
+        border-radius: 15%;
+        box-shadow: 1px 1px 10px lime;
+    }
+    #conhecimento h2{
+        font-size: 38px;
+        margin-left: 220px;
+    }
+    #cards{
+        grid-template-columns: repeat(3, minmax(140px, 3fr));
+    }
+    #projetos h2{
+        font-size: 38px;
+        margin-left: 250px;
+    }
+    #carouselExample img{
+        width: 150px;
+        height: 100%;
+    }
+}
+@media (992px <= width <= 1199px){
+    #menu{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    #menu h1{
+        font-size: 60px;
+        margin: 20px;
+    }
+    #menu ul{
+        display: none;
+    }
+    #main-content{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -150px;
+        margin-bottom: -20px;
+    } 
+    
+    #show{
+        margin-top: 200px;
+        margin-left: 200px;
+        padding: 0px;
+    }
+    #show img{
+        width: 400px;
+    }
+    #sobre-mim h2{
+        margin-top: 15px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .conteudo #eu{ 
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 50%;
+        border-radius: 15%;
+        box-shadow: 1px 1px 10px lime;
+    }
 }
 
 @media (min-width:1200px) and (max-width:1919px){
